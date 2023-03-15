@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Wavve(웨이브)</title>
+		<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<script src="https://kit.fontawesome.com/49845ee96b.js" crossorigin="anonymous"></script>
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/swiper-bundle.min.js"></script>
+		<script src="./js/function.js"></script>
+	</head>
+	<body>
+		<div id="wrap">
+			<header>
+				<div class="snb">
+					<ol>
+						<li><a href="#">로그인</a></li>
+						<li><a href="#">이용권</a></li>
+						<li>
+							<a href="#">쿠폰&sdot;코인 </a>
+							<ul>
+								<li><a href="#">쿠폰 등록</a></li>
+								<li><a href="#">코인 충전</a></li>
+							</ul>
+						</li>
+						<li><a href="#">웨이브온</a></li>
+						<li><a href="#">이벤트</a></li>
+					</ol>
+				</div>
+				<div class="header-container">
+					<div class="main-header">
+						<h1 class="title"><a href="#">WAVVE</a></h1>
+						<nav>
+							<ul class="gnb">
+								<li><a href="#">홈</a></li>
+								<li>
+									<a href="#">카테고리</a>
+									<ol class="lnb">
+										<li><a href="#">전체 카테고리 보기</a></li>
+										<li><a href="#">추천 메뉴</a></li>
+										<li><a href="#">드라마</a></li>
+										<li><a href="#">예능</a></li>
+										<li><a href="#">영화</a></li>
+										<li><a href="#">영화플러스</a></li>
+										<li><a href="#">해외시리즈</a></li>
+										<li><a href="#">ORIGINAL</a></li>
+										<li><a href="#">CLASSIC</a></li>
+									</ol>
+								</li>
+								<li><a href="https://www.wavve.com/live/index.html">LIVE</a></li>
+								<li><a href="https://www.wavve.com/member/login?referer=%2Fmy">MY</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="search">
+						<label for="search">검색</label>
+						<input
+							type="text"
+							id="search"
+							placeholder="제목, 장르, 배우로 찾아보세요"
+							autocomplete="off"
+						/>
+					</div>
+				</div>
+
+				<div class="header-mobile">
+					<div class="header-top">
+						<h1 class="title"><a href="#">WAVVE</a></h1>
+						<a href="https://www.wavve.com/live/index.html" class="live">LIVE</a>
+					</div>
+					<div class="header-bottom">
+						<ul class="gnb-mobile">
+							<li class="on">
+								<a href="#">
+									<i class="fa-solid fa-house"></i>
+									홈</a
+								>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa-solid fa-bars"></i>
+									카테고리</a
+								>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa-solid fa-magnifying-glass"></i>
+									검색</a
+								>
+							</li>
+							<li>
+								<a href="#">
+									<i class="fa-regular fa-user"></i>
+									로그인/가입</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+
+			<section class="main-slide">
+				<h2 class="sr-only">메인 슬라이드</h2>
+				<div class="mainslide-container">
+					<div class="mainslide-swiper">
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide slide1">
+								<a href="#">
+									<img src="./images/20230208_banner_084033.jpg" alt="아마짱" />
+								</a>
+							</div>
+							<div class="swiper-slide slide2">
+								<a href="#">
+									<img src="./images/20230131_banner_110011.jpg" alt="젠틀맨" />
+								</a>
+							</div>
+							<div class="swiper-slide slide3">
+								<a href="#">
+									<img src="./images/20230225_banner_020940.jpg" alt="모범택시2" />
+								</a>
+							</div>
+							<div class="swiper-slide slide4">
+								<a href="#">
+									<img src="./images/20230228_banner_175633.jpg" alt="히든어스" />
+								</a>
+							</div>
+							<div class="swiper-slide slide5">
+								<a href="#">
+									<img src="./images/20230227_banner_234601.jpg" alt="WET" />
+								</a>
+							</div>
+							<div class="swiper-slide slide6">
+								<a href="#">
+									<img src="./images/20230223_banner_154549.jpg" alt="국가수사본부" />
+								</a>
+							</div>
+							<div class="swiper-slide slide7">
+								<a href="#">
+									<img src="./images/20230225_banner_015918.jpg" alt="꼭두의 계절" />
+								</a>
+							</div>
+							<div class="swiper-slide slide8">
+								<a href="#">
+									<img src="./images/20230223_banner_132359.jpg" alt="오아시스" />
+								</a>
+							</div>
+						</div>
+						<div class="pause-button">
+							<button type="button" class="pause">재생/정지</button>
+						</div>
+						<div class="swiper-pagination"></div>
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="content hot">
+				<div class="heading">
+					<h3>실시간 인기 콘텐츠</h3>
+					<a href="#" class="more">더보기</a>
+				</div>
+				<ul>
+					<li>
+						<a href="#"
+							><img
+								src="./images/CS1_C202100015-Vertical_LogoY_w720_h1080_q75.jpg"
+								alt="미스터트롯2"
+						/></a>
+					</li>
+					<li>
+						<a href="#"
+							><img
+								src="./images/S01_P457619085-Vertical_LogoY-RE_w720_h1080_q75.jpg"
+								alt="꼬리에 꼬리를 무는 그날 이야기"
+						/></a>
+					</li>
+					<li class="wavve-only">
+						<a href="#"
+							><img
+								src="./images/PRG_C9901_C99000000107-Vertical_LogoY_WOriginal-RERERE_w720_h1080_q75.jpg"
+								alt="국가수사본부"
+						/></a>
+					</li>
+					<li>
+						<a href="#"
+							><img src="./images/S01_P461258601-Vertical_LogoY_w720_h1080_q75.jpg" alt="모범택시2"
+						/></a>
+					</li>
+					<li>
+						<a href="#"
+							><img
+								src="./images/75866e0a35c272e84e0cf22e24e73dc9_w720_h1080_q75.jpg"
+								alt="라디오스타"
+						/></a>
+					</li>
+				</ul>
+			</section>
+
+			<section class="content recommend">
+				<div class="heading">
+					<h3>웨이브가 추천하는 콘텐츠</h3>
+					<a href="#" class="more">더보기</a>
+				</div>
+				<ul>
+					<li>
+						<a href="#"
+							><img
+								src="./images/0099a67b160fa555c3d370c1b7cbd30d_w720_h1080_q75.jpg"
+								alt="오아시스"
+						/></a>
+					</li>
+					<li>
+						<a href="#"
+							><img
+								src="./images/PRG_C9901_C99000000057-Vertical_LogoY_w720_h1080_q75.jpg"
+								alt="모범택시"
+						/></a>
+					</li>
+					<li>
+						<a href="#"
+							><img
+								src="./images/PRG_M_T60432G-Vertical_LogoY_w720_h1080_q75.jpg"
+								alt="꼭두의 계절"
+						/></a>
+					</li>
+					<li>
+						<a href="#"
+							><img
+								src="./images/3015dae68b89f94e58674dc10eed7009_w720_h1080_q75.jpg"
+								alt="수학없는 수학여행"
+						/></a>
+					</li>
+					<li class="wavve-only">
+						<a href="#"
+							><img
+								src="./images/PRG_CG02_CG0000000219-Vertical_LogoY_w720_h1080_q75.jpg"
+								alt="그레이트 게임"
+						/></a>
+					</li>
+				</ul>
+			</section>
+
+			<section class="content chace">
+				<div class="heading">
+					<h3>표적은 단 하나! 지구 끝까지 쫓아간다</h3>
+					<a href="#" class="more">더보기</a>
+				</div>
+				<ul>
+					<li class="wavve-only">
+						<a href="#"
+							><img
+								src="./images/PRG_C9901_C99000000107-Vertical_LogoY_WOriginal-RERERE_w720_h1080_q75.jpg"
+								alt="국가수사본부"
+						/></a>
+					</li>
+					<li>
+						<a href="#"
+							><img
+								src="./images/PRG_S01_V0000010101-Vertical_LogoY-RE_w720_h1080_q75.jpg"
+								alt="그것이 알고싶다"
+						/></a>
+					</li>
+					<li>
+						<a href="#"
+							><img
+								src="./images/PRG_K01_T2016-0761_Vertical_LogoY_w720_h1080_q75.jpg"
+								alt="끝까지 간다"
+						/></a>
+					</li>
+					<li>
+						<a href="#"
+							><img src="./images/PRG_C2401_PR867-Vertical_LogoY_w720_h1080_q75.jpg" alt="써치"
+						/></a>
+					</li>
+					<li>
+						<a href="#"
+							><img
+								src="./images/PRG_K02_T2015-0106_Vertical_LogoY_w720_h1080_q75.jpg"
+								alt="공소시효"
+						/></a>
+					</li>
+				</ul>
+			</section>
+
+			<section class="content earth">
+				<div class="heading">
+					<h3>지구의 이야기를 기록하다</h3>
+					<a href="#" class="more">더보기</a>
+				</div>
+				<ul>
+					<li>
+						<a href="#"
+							><img
+								src="./images/PRG_K01_T2023-0035-Vertical_LogoY_w720_h1080_q75.jpg"
+								alt="히든 어스"
+						/></a>
+					</li>
+					<li>
+						<a href="#"
+							><img
+								src="./images/067644c173423c26aaecca090f435e14_w720_h1080_q75.jpg"
+								alt="5억년의 흔적"
+						/></a>
+					</li>
+					<li>
+						<a href="#"
+							><img
+								src="./images/PRG_K01_T2015-0098-Vertical_LogoY_w720_h1080_q75.jpg"
+								alt="코리언 지오그래픽"
+						/></a>
+					</li>
+					<li>
+						<a href="#"
+							><img
+								src="./images/PRG_S01_V0000354736-Vertical_LogoY_w720_h1080_q75.jpg"
+								alt="태평양"
+						/></a>
+					</li>
+					<li>
+						<a href="#"
+							><img
+								src="./images/PRG_C2501_WPG2200210D-Vertical_LogoY_w720_h1080_q75.jpg"
+								alt="지구는 엄마다"
+						/></a>
+					</li>
+				</ul>
+			</section>
+
+			<section class="content top20">
+				<div class="heading">
+					<h3>오늘의 탑20</h3>
+				</div>
+				<ul>
+					<li>
+						<a href="#"
+							><img
+								src="./images/PRG_C9901_C99000000057-Vertical_LogoY_w720_h1080_q75.jpg"
+								alt="모범택시"
+						/></a>
+					</li>
+					<li>
+						<a href="#"
+							><img
+								src="./images/S01_P457619085-Vertical_LogoY-RE_w720_h1080_q75.jpg"
+								alt="꼬리에 꼬리를 무는 그날 이야기"
+						/></a>
+					</li>
+					<li>
+						<a href="#"
+							><img
+								src="./images/PRG_S03_22000012183-Vertical_LogoY-RE-RE_w720_h1080_q75.jpg"
+								alt="나는 솔로"
+						/></a>
+					</li>
+					<li>
+						<a href="#"
+							><img src="./images/S01_V0000330171-Vertical_LogoY_w720_h1080_q75.jpg" alt="런닝맨"
+						/></a>
+					</li>
+					<li>
+						<a href="#"
+							><img
+								src="./images/PRG_CS1_C201900070-Vertical_LogoY-RE_w720_h1080_q75.jpg"
+								alt="미스터트롯"
+						/></a>
+					</li>
+				</ul>
+			</section>
+
+			<footer>
+				<div class="notice">
+					<div class="notice-container">
+						<h2>
+							<a href="https://www.wavve.com/customer/notice_list">공지사항 </a>
+							<i class="fa-solid fa-bullhorn"></i>
+						</h2>
+						<ol>
+							<li>
+								<a href="https://www.wavve.com/customer/notice_view?noticeId=3199"
+									>[모범 택시2] 오픈 기념 프리미엄 12개월 33% 할인 이벤트</a
+								>
+							</li>
+							<li>
+								<a href="https://www.wavve.com/customer/notice_view?noticeId=3157"
+									>[에스파의 싱크로드] 시청 이벤트</a
+								>
+							</li>
+						</ol>
+						<div class="notice-navigation">
+							<button type="button" class="prev">prev</button>
+							<button type="button" class="next">next</button>
+						</div>
+					</div>
+				</div>
+				<div class="footer-top">
+					<div class="help">
+						<a href="#">회사소개</a>
+						<a href="#">인재채용</a>
+						<a href="#">서비스 소개</a>
+						<a href="#">이용약관</a>
+						<a href="#">개인정보 처리방침</a>
+						<a href="#">고객센터</a>
+					</div>
+					<div class="link">
+						<div class="wavve-on">
+							<h3>wavve on</h3>
+							<p>사업자용 웨이브 가입</p>
+						</div>
+						<a href="#">facebook</a>
+						<a href="#">naver post</a>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<div class="address-container">
+						<p>콘텐츠웨이브 주식회사</p>
+						<p>대표이사 이태현</p>
+						<p>
+							고객센터 1599-3709 (평일 09:00~18:00 / 점심시간 12:00~13:00 / 주말 및 공휴일 휴무)
+						</p>
+					</div>
+					<div class="address-container">
+						<p>사업자등록번호 220-88-38020</p>
+						<p>
+							호스팅서비스제공자 : 마이크로소프트 유한회사, 구글클라우드코리아 유한회사,
+							아마존웹서비시즈코리아 유한회사
+						</p>
+					</div>
+					<div class="address-container">
+						<p>통신판매업 신고번호 : 제 2021-서울영등포-0585호</p>
+						<p>
+							통신판매업 정보 공개 :
+							<a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=220-88-38020"
+								>http://www.ftc.go.kr/bizCommPop.do?wrkr_no=220-88-38020</a
+							>
+						</p>
+					</div>
+					<div class="address-container">
+						<address>서울특별시 영등포구 여의나루로 60 포스트타워 19층</address>
+						<p>전자우편주소 : <a href="mailto:helpdesk@wavve.com">helpdesk@wavve.com</a></p>
+					</div>
+					<address>Copyright© 콘텐츠웨이브(주) All rights reserved.</address>
+				</div>
+			</footer>
+
+			<aside>
+				<button class="top" type="button">맨 위로</button>
+			</aside>
+		</div>
+	</body>
+</html>
